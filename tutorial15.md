@@ -41,7 +41,7 @@ This network includes:
 
 Unlike Tutorial 10, all addressing here comes from **one classful network, `192.168.20.0/24`**, subnetted with VLSM so the LANs and the WAN links use *different* mask lengths.
 
-![Figure](../../img/cisco-tutorials/tutorial-15/fig1.png)
+![Figure](Screenshot 2026-09-24 123957.png)
 
 ---
 

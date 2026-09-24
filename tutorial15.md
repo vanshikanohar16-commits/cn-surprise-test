@@ -139,7 +139,7 @@ Go to **Desktop > IP Configuration** on each PC:
 | PC4 | 192.168.20.140 | 255.255.255.192  | 192.168.20.129    |
 | PC5 | 192.168.20.141 | 255.255.255.192  | 192.168.20.129    |
 
-![Figure](../../img/cisco-tutorials/tutorial-15/fig3.png)
+![Figure](Screenshot 2026-09-24 124103.png)
 
 ```{admonition} Important
 :class: important

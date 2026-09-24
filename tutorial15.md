@@ -254,7 +254,7 @@ write memory
 exit
 ```
 
-![Figure](../../img/cisco-tutorials/tutorial-15/fig4.png)
+![Figure](Screenshot 2026-09-24 124753.png)
 
 ---
 

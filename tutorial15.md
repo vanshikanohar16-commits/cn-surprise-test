@@ -103,7 +103,7 @@ Follow these steps for **R0**, **R1**, and **R2**:
 | R0   | R1 | se0/0 ↔ se1/0   |
 | R1   | R2 | se0/0 ↔ se1/0   |
 
-![Figure](../../img/cisco-tutorials/tutorial-15/fig2.png)
+![Figure](Screenshot 2026-09-24 124040.png)
 
 ---
 

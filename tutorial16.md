@@ -39,7 +39,7 @@ This network includes:
 
 The goal is for PCs in AS 100 to reach PCs in AS 200 (and vice-versa) purely through BGP-advertised routes.
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig1.png)
+![Figure](Screenshots/ss2_1.jpeg)
 
 ---
 
@@ -92,7 +92,7 @@ Follow these steps for **R0** and **R1**:
 |------|----|-----------------|
 | R0   | R1 | se0/0 ↔ se1/0   |
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig2.png)
+![Figure](Screenshots/ss2_2.jpeg)
 
 ---
 
@@ -115,7 +115,7 @@ Go to **Desktop > IP Configuration** on each PC:
 | PC2 | 172.16.2.10  | 255.255.255.0   | 172.16.2.1        |
 | PC3 | 172.16.2.11  | 255.255.255.0   | 172.16.2.1        |
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig3.png)
+![Figure](Screenshots/ss2_3.jpeg)
 
 ```{admonition} Important
 :class: important
@@ -190,7 +190,8 @@ write memory
 exit
 ```
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig4.png)
+![Figure](Screenshots/ss2_4.1.jpeg)
+![Figure](Screenshots/ss2_4.2.jpeg)
 
 ---
 
@@ -204,7 +205,7 @@ show ip bgp summary
 
 Look at the neighbor's `State/PfxRcd` column — a numeric value (e.g. `1`) means the peering is **Established** and a prefix has been received. If it instead shows `Idle` or `Active`, the peering hasn't come up yet — double check the serial link's IPs, the AS numbers, and that both interfaces show `no shutdown`.
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig5.png)
+![Figure](Screenshots/ss2_5.1.jpeg)
 
 ### Step 5.2 – Inspect the BGP Table
 
@@ -214,7 +215,7 @@ show ip bgp
 
 You should see both `172.16.1.0/24` and `172.16.2.0/24` listed, each with its next-hop and AS path.
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig6.png)
+![Figure](Screenshots/ss2_5.2.png)
 
 ### Step 5.3 – Check Routing Tables
 
@@ -224,7 +225,7 @@ show ip route bgp
 
 You should see the remote LAN as a BGP route (`B`), learned entirely through the eBGP peering rather than a static entry or an IGP.
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig7.png)
+![Figure](Screenshots/ss2_5.3.png)
 
 ### Step 5.4 – Test Connectivity
 
@@ -240,7 +241,8 @@ From **PC2**, run:
 ping 172.16.1.10
 ```
 
-![Figure](../../img/cisco-tutorials/tutorial-16/fig8.png)
+![Figure](Screenshots/ss2_5.4.png)
+![Figure](Screenshots/ss2_5.5.png)
 
 ---
 
